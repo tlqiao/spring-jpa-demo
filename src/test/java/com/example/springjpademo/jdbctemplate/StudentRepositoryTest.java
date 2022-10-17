@@ -1,5 +1,6 @@
-package com.example.springjpademo;
+package com.example.springjpademo.jdbctemplate;
 
+import com.example.springjpademo.JdbcTemplateApplication;
 import com.example.springjpademo.jdbctemplate.dao.Student;
 import com.example.springjpademo.jdbctemplate.repository.StudentRepository;
 import org.junit.jupiter.api.Assertions;
@@ -9,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-@SpringBootTest()
+@SpringBootTest(classes={JdbcTemplateApplication.class})
 class StudentRepositoryTest {
     @Autowired
     StudentRepository studentRepository;

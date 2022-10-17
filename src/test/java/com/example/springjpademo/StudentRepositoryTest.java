@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-@SpringBootTest(classes={SpringJpaDemoApplication.class})
+@SpringBootTest()
 class StudentRepositoryTest {
     @Autowired
     StudentRepository studentRepository;

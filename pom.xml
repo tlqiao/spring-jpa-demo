@@ -38,6 +38,10 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 <!--		默认test中是junit作为测试框架，如果要引入junit5需要先exclude后再添加junit5的依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

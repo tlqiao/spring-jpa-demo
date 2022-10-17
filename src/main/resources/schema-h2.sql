@@ -1,6 +1,4 @@
-Create table person
-(
-    id   INT IDENTITY,
-    name VARCHAR(64),
-    age  INTEGER;
-)
+Create table  IF NOT EXISTS PERSON (
+                                       ID INT AUTO_INCREMENT PRIMARY KEY,
+                                       NAME VARCHAR(64),
+    AGE INT);

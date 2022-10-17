@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes={MultipleDatasourceApplication.class})
+@SpringBootTest
 public class PersonRepositoryTest {
     @Autowired
     PersonRepository personRepository;
@@ -15,8 +15,8 @@ public class PersonRepositoryTest {
         personRepository.getPersonCountFromMysql();
     }
 
-    @Test
-    public void testH2DB() {
-        personRepository.getPersonCountFromH2();
-    }
+//    @Test
+//    public void testH2DB() {
+//        personRepository.getPersonCountFromH2();
+//    }
 }

@@ -21,13 +21,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>com.h2database</groupId>-->
-<!--			<artifactId>h2</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+<!--		需要使用redis就需要引入此包-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 <!--		支持web应用，默认引入tomcat作为web服务器，如果要引入其他需要exclude后，再添加其他依赖，例如jetty-->
 		<dependency>
@@ -41,6 +51,27 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+<!--		简化mybatis查询的插件-->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.5.0</version>
+		</dependency>
+<!--		joda是负责money转换的问题-->
+		<dependency>
+			<groupId>org.joda</groupId>
+			<artifactId>joda-money</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jadira.usertype</groupId>
+			<artifactId>usertype.core</artifactId>
+			<version>6.0.1.GA</version>
 		</dependency>
 <!--		默认test中是junit作为测试框架，如果要引入junit5需要先exclude后再添加junit5的依赖-->
 		<dependency>

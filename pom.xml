@@ -34,11 +34,16 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-<!--		需要使用redis就需要引入此包-->
+<!--		引入jedis-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
 		</dependency>
+<!--		需要使用redis就需要引入此包,springboot默认集成的是lettuce,所以这里注释掉下面的依赖-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--		</dependency>-->
 <!--		支持web应用，默认引入tomcat作为web服务器，如果要引入其他需要exclude后，再添加其他依赖，例如jetty-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -1,6 +1,5 @@
 package com.example.springjpademo.jdbctemplate;
 
-import com.example.springjpademo.JdbcTemplateApplication;
 import com.example.springjpademo.jdbctemplate.dao.Student;
 import com.example.springjpademo.jdbctemplate.repository.StudentRepository;
 import org.junit.jupiter.api.Assertions;
